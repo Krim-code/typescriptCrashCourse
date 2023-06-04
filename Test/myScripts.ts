@@ -45,7 +45,8 @@ class Blocks implements BaseBlock{
         post.append(p)
         post.append(data)
         mainPost.append(post)
-        document.body.append(mainPost)
+        let dataStore = document.querySelector('.col-8')
+        dataStore.append(mainPost)
     }
 
     SetContent(): void {

@@ -23,7 +23,8 @@ var Blocks = /** @class */ (function () {
         post.append(p);
         post.append(data);
         mainPost.append(post);
-        document.body.append(mainPost);
+        var dataStore = document.querySelector('.col-8');
+        dataStore.append(mainPost);
     };
     Blocks.prototype.SetContent = function () {
         this.Content = prompt("Input the content post");
